@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <fieldset class="fieldset"><legend>Customer Survey Form</legend>
+    <form id="surveyForm">
+      
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required><br><br>
+
+        <label for="country">Country:</label><br>
+        <select id="country" required>
+            <option value="">Select Country</option>
+            <option value="USA">USA</option>
+            <option value="USA">India</option>
+            <option value="USA">China</option>
+            <option value="Canada">Canada</option>
+            <!-- Add more options as needed -->
+        </select><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="checkbox" id="genderMale" name="gender" value="Male"> Male
+        <input type="checkbox" id="genderFemale" name="gender" value="Female"> Female<br><br>
+
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" required><br><br>
+
+        <button class="submit" type="button" onclick="submitForm()">Submit</button>
+        <button  class="reset" type="button" onclick="resetForm()">Reset</button>
+    
+   
+    </form>
+</fieldset>
+    <!-- Popup for displaying selected values -->
+    <div id="popup" class="popup"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

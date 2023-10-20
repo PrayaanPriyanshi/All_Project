@@ -1,0 +1,68 @@
+/* CSS styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    background-color:rgb(232, 166, 215);
+    border: 1px solid #888;
+    padding: 20px;
+    z-index: 1000;
+    max-width: 300px;
+    text-align: left;
+    margin-top: 260px;
+    border-radius: 5px 70px 5px 70px;
+
+}
+
+.popup button {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.fieldset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(174, 249, 249);
+    border: 2px solid black;
+    width: 300px;
+
+    margin-top: 100px;
+    margin-left: 400px;
+    border-radius:12px;
+
+    /* height: 100vh; */
+  
+
+    
+    /* align-items: center;
+    background-color: aquamarine;
+ width: fit-content;
+position: absolute;
+top: 250px;
+left:250px; */
+
+
+}
+
+
+
+.submit{
+    color:blue;
+    margin-left: 30%;
+    border-radius: 5px;
+}
+.reset{
+    border-radius: 5px;
+    color: red
+    ;
+}
+.submit:hover{
+    background-color:green;
+}
+.reset:hover{
+    background-color: gray;
+}
